@@ -5,7 +5,7 @@ public static void main(String args[])
 {
 DataInputStream sys=new DataInputStream(System.in);
 int c=0,a,temp;
-int n=sys.nextInt();
+int n=sys.readLine();
 temp=n;
 while(n>0 && n<=100000)
 {
