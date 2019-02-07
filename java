@@ -1,22 +1,23 @@
 public class Prime 
 {
-public static void main(String[] args) {
-DataInputStream d=new DataInputStream(System.in);
-int lower=d.readLine(), higher=d.readLine();
-while (low < high) 
+public static void main(String[] args)
+{
+DataInputStream din= new DataInputStream(System.in);
+int lower=din.readLine(), higher=din.readLine();
+while (lower<higher) 
 {
 boolean flag = false;
-for(int i = 2; i <= low/2; ++i) 
+for(int i=2; i<=lower/2;++i) 
 {
-if(low % i == 0) 
+if(lower % i == 0) 
 {
 flag = true;
 break;
 }
 }
 if (!flag)
-System.out.print(low + " ");
-++low;
+System.out.println(lower + " ");
+++lower;
 }
 }
 }
